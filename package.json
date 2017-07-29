@@ -21,6 +21,6 @@
   "homepage": "https://github.com/JWLD/spotify-auth#readme",
   "dependencies": {
     "express": "^4.15.3",
-    "hapi": "^16.5.0"
+    "express-handlebars": "^3.0.0"
   }
 }

@@ -1,5 +1,5 @@
-/* HOME ROUTE */
+/* Home route */
 
 module.exports = (req, res) => {
-  res.send('Hello world');
+  res.render('home');
 };
