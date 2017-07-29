@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/start.js",
-    "dev": "nodemon src/start.js"
+    "start": "npm run sass && node src/start.js",
+    "dev": "nodemon src/start.js",
+    "sass": "./node_modules/.bin/node-sass ./public/style/sass/main.scss ./public/style/style.css"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "homepage": "https://github.com/JWLD/spotify-auth#readme",
   "dependencies": {
     "express": "^4.15.3",
-    "express-handlebars": "^3.0.0"
+    "express-handlebars": "^3.0.0",
+    "node-sass": "^4.5.3"
   }
 }
