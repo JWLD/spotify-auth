@@ -16,6 +16,9 @@ app.engine('hbs', ExpHbs({
 // set the view engine
 app.set('view engine', 'hbs');
 
+// serve static files from public folder
+app.use(Express.static('public'));
+
 // connect router to app
 app.use(router);
 
